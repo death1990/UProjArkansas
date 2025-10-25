@@ -1,0 +1,6 @@
+#include "CompanionCombat_AnchorLocation_TargetFollow_PlayerPathfindingQueryCostLimit.h"
+
+UCompanionCombat_AnchorLocation_TargetFollow_PlayerPathfindingQueryCostLimit::UCompanionCombat_AnchorLocation_TargetFollow_PlayerPathfindingQueryCostLimit() {
+}
+
+

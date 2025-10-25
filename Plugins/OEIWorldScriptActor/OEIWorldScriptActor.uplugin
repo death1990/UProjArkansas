@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEIWorldScriptActor",
+	"Description": "Adds a new script actor with special functionality and other editor tooling to make it easier to build blueprints that can work similarly to level scripts/with a similar workflow but don't actually require a sublevel.",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIWorldScriptActor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

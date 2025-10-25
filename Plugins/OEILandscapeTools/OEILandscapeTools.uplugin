@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 5,
+	"VersionName": "1.00.00.0005",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEILandscapeTools",
+	"Description": "Landscape tools to conveniently modify and copy terrain",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"EnabledByDefault": false,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIPrefabricator",
+			"Enabled": true
+		}
+	]
+}

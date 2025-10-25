@@ -1,0 +1,6 @@
+#include "EQSContext_Companion_PlayerCombatProxyForwardDirectionEndProjected.h"
+
+UEQSContext_Companion_PlayerCombatProxyForwardDirectionEndProjected::UEQSContext_Companion_PlayerCombatProxyForwardDirectionEndProjected() {
+}
+
+

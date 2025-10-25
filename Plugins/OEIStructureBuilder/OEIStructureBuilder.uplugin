@@ -1,0 +1,58 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEIStructureBuilder",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIStructureBuilder",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEIPrefabricator",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIVariants",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIThemes",
+			"Enabled": true
+		},
+		{
+			"Name": "CustomMeshComponent",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIEditorUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEILandscapeTools",
+			"Enabled": true
+		},
+		{
+			"Name": "Landmass",
+			"Enabled": true
+		}
+	]
+}

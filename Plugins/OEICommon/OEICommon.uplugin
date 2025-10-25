@@ -1,0 +1,83 @@
+{
+	"FileVersion": 3,
+	"Version": 91,
+	"VersionName": "1.00.00.0091",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEI Common",
+	"Description": "Core technology used by all Obsidian plugins",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEICommon",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "OEIText",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIGlobalVariables",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIScripting",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIAchievements",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+	],
+	"Plugins": [
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "SqliteCore",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "StructUtils",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "AssetManagerEditor",
+			"Enabled": true,
+			"Optional": false
+		}
+	],
+	"PythonRequirements": [
+		{
+			"Platform": "All",
+			"Requirements": [
+				"certifi==2024.7.4 --hash=sha256:c198e21b1289c2ab85ee4e67bb4b4ef3ead0892059901a8d5b622f24a1101e90",
+				"cffi==1.17.0 --hash=sha256:b50aaac7d05c2c26dfd50c3321199f019ba76bb650e346a6ef3616306eed67b0",
+				"charset_normalizer==3.3.2 --hash=sha256:663946639d296df6a2bb2aa51b60a2454ca1cb29835324c640dafb5ff2131a77",
+				"cryptography==43.0.0 --hash=sha256:0663585d02f76929792470451a5ba64424acc3cd5227b03921dab0e2f27b1709",
+				"idna==3.7 --hash=sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0",
+				"msal==1.30.0 --hash=sha256:423872177410cb61683566dc3932db7a76f661a5d2f6f52f02a047f101e1c1de",
+				"pycparser==2.22 --hash=sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc",
+				"PyJWT==2.9.0 --hash=sha256:3b02fb0f44517787776cf48f2ae25d8e14f300e6d7545a4315cee571a415e850",
+				"requests==2.32.3 --hash=sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+				"urllib3==2.2.2 --hash=sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"
+			]
+		}
+	]
+}

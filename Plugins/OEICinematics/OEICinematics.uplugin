@@ -1,0 +1,63 @@
+{
+	"FileVersion": 3,
+	"Version": 3,
+	"VersionName": "1.00.00.0003",
+	"FriendlyName": "OEI Cinematics",
+	"Description": "Cinematics plugin built on top of OEIFlowCharts",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEICinematics",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIFlowCharts",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OEIPrefabricator",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAudio",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIAnimProxy",
+			"Enabled": true
+		},
+		{
+			"Name": "SequencerScripting",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "LevelSequenceEditor",
+			"Enabled": true
+		},
+		{
+			"Name": "MovieRenderPipeline",
+			"Enabled": true
+		}
+	]
+}

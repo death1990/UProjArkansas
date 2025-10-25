@@ -1,0 +1,51 @@
+{
+	"FileVersion": 1,
+	"Version": 7,
+	"VersionName": "1.00.00.0008",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEI Jira View",
+	"Description": "Display JIRA issues in game",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIJiraView",
+			"Type": "DeveloperTool",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "OEIJiraViewEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ImGui",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIRest",
+			"Enabled": true
+		},
+		{
+			"Name": "OEISecureStorage",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIJira",
+			"Enabled": true
+		}
+	]
+}

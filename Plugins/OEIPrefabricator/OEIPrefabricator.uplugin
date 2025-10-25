@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"FriendlyName": "OEIPrefabricator",
+	"Version": 42,
+	"VersionName": "1.00.05.0042",
+	"TrackPatchNotes": true,
+	"CreatedBy": "Code Respawn",
+	"CreatedByURL": "http://prefabricator.io",
+	"DocsURL": "http://docs.prefabricator.io",
+	"Description": "Create Prefabs in Unreal Engine",
+	"Category": "Prefab",
+	"EnabledByDefault": false,
+	"Modules": [
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true,
+			"Optional": true
+		}
+	],
+	"CanContainContent": true
+}

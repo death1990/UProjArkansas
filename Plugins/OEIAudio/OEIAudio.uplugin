@@ -1,0 +1,90 @@
+{
+	"FileVersion": 3,
+	"Version": 57,
+	"VersionName": "1.00.00.0057",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEI Audio",
+	"Description": "Plays sound effects and voice over",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIAudio",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIAmbientVolume",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEISplineEmitter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEISplineEmitterEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIVoiceOver",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIVoiceOverEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OEIFlowCharts",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OEIWwise",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "Wwise",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OEIJali",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"OWMOD": "Mark DeGeorge - Adding OEITickManager Plugin - https://confluence.obsidian.net/display/AR/OEITickManager",
+			"Name": "OEITickManager",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "ControlRig",
+			"Enabled": true
+		}
+	]
+}

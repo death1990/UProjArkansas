@@ -1,0 +1,31 @@
+{
+	"FileVersion": 1,
+	"Version": 0.4,
+	"VersionName": "0.3",
+	"FriendlyName": "OEI View Extenstions",
+	"Description": "Custom OEI View Extensions",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIViewExtensionsRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		},
+		{
+			"Name": "OEIViewExtensionsEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	],
+	"Plugins": [
+	]
+}

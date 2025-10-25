@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 27,
+	"VersionName": "0.01.00.0027",
+	"TrackPatchNotes": true,
+	"FriendlyName": "Data Browser",
+	"Description": "Creates an interface to quickly view and edit a high volume of assets.",
+	"Category": "Editor",
+	"CreatedBy": "Obsidian Entertainment",
+	"CreatedByURL": "http://www.obsidian.net/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIDataBrowser",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Mac"
+			]
+		}
+	]
+}

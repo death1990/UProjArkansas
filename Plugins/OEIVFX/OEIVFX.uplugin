@@ -1,0 +1,40 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEI VFX",
+	"Description": "VFX related stuff to be shared between projects.",
+	"Category": "OEI",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Modules": [
+		{
+			"Name": "OEIVFX",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIWwise",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "StructUtils",
+			"Enabled": true
+		}
+	]
+}

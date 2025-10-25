@@ -1,0 +1,41 @@
+{
+	"FileVersion" : 1,
+	
+	"FriendlyName" : "Wwise Unreal Engine Integration",
+	"Version" : 202112656,
+	"VersionName" : "2021.1.14.8108.2656",
+	"CreatedBy" : "Audiokinetic, Inc.",
+	"CreatedByURL" : "http://audiokinetic.com",
+	"Description" : "Wwise integration for Unreal Engine",
+	"Category" : "Audio",
+	"EnabledByDefault" : true,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "AkAudio",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreDefault"
+		}
+	],
+	
+	"Plugins":
+	[
+		{
+			"Name": "GeometryMode",
+			"Enabled": true
+		},
+		{
+			"OBSIDIANMOD" : "KSwaim - Adding for the UAkAUudioEvent property customization",
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"OWMOD" : "Brandon Long - Adding OEITickManager Plugin - https://confluence.obsidian.net/display/AR/OEITickManager",
+			"Name" : "OEITickManager",
+			"Enabled" : true
+		}
+	],
+	
+	"CanContainContent" : true
+}

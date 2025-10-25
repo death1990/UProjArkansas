@@ -1,0 +1,50 @@
+{
+	"FileVersion": 3,
+	"Version": 17,
+	"VersionName": "1.00.00.0017",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEI Wwise",
+	"Description": "Additional audio functionality built on the Wwise plugin.",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIWwise",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "OEIMusic",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIFlowCharts",
+			"Enabled": true
+		},
+		{
+			"Name": "Wwise",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true,
+			"Optional": true
+		}
+	]
+}

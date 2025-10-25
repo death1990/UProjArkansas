@@ -1,0 +1,50 @@
+{
+	"FileVersion": 1,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEICrowdManager",
+	"Description": "This plugin provides a framework for crowd character ticking and interfaces to create crowds of characters.",
+	"Category": "OEI",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEICrowdManagerRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIMultiSkeletalMesh",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAnimation",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAnimProxy",
+			"Enabled": true
+		},
+		{
+			"Name": "ZoneGraph",
+			"Enabled": true
+		},
+		{
+			"Name": "ZoneGraphAnnotations",
+			"Enabled": true
+		}
+	]
+}

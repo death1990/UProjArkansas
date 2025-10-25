@@ -1,0 +1,6 @@
+#include "AnimNotifyState_TimedNiagaraEffectByDamageTypeAdvanced.h"
+
+UAnimNotifyState_TimedNiagaraEffectByDamageTypeAdvanced::UAnimNotifyState_TimedNiagaraEffectByDamageTypeAdvanced() {
+}
+
+

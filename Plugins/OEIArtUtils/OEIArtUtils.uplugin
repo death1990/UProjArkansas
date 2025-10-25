@@ -1,0 +1,76 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEI Art Utilities",
+	"Description": "Tool for Art File Utilities",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIArtUtils",
+			"Type": "Editor",
+			"LoadingPhase": "PostDefault"
+		},
+		{
+			"Name": "OEIAssetDeprecationTool",
+			"Type": "Editor",
+			"LoadingPhase": "PostDefault"
+		},
+		{
+			"Name": "OEIDeprecationInfoRuntime",
+			"Type": "DeveloperTool",
+			"LoadingPhase": "PostDefault"
+		},
+		{
+			"Name": "OEIMetaDataTool",
+			"Type": "Editor",
+			"LoadingPhase": "PostDefault"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AssetManagerEditor",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "DataValidation",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "OEICommon",
+			"Enabled": true,
+			"Optional": false
+		},
+		{
+			"Name": "OEIWodem",
+			"Enabled": true,
+			"Optional": true
+		}
+	]
+}

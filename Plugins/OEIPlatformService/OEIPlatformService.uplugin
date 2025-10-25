@@ -1,0 +1,50 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEIPlatformService",
+	"Description": "Abstracts out some platform services related stuff like login to Xbox Live and Steam.",
+	"Category": "OEI",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "http://www.obsidian.net",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"EnabledByDefault": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIPlatformService",
+			"Type": "Runtime",
+			"LoadingPhase": "EarliestPossible"
+		}
+	],
+
+	"OEIComment0": "OnlineSubsystemGDK is not listed intentionally, otherwise UBT would fail without GDK.",
+	"OEIComment1": "Please add OnlineSubsystemGDK to TargetRules::InternalPluginDependencies in your Target.cs file to dismiss the warning",
+
+	"OEIComment2": "OnlineSubsystemGDK needs to be enabled in uproject if GDK not installed, otherwise OEIPlatformService module would fail to load for the Editor",
+
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "JWT",
+			"Enabled": true
+		}
+	]
+}

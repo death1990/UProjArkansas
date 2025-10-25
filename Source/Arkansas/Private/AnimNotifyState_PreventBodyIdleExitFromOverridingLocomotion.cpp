@@ -1,0 +1,6 @@
+#include "AnimNotifyState_PreventBodyIdleExitFromOverridingLocomotion.h"
+
+UAnimNotifyState_PreventBodyIdleExitFromOverridingLocomotion::UAnimNotifyState_PreventBodyIdleExitFromOverridingLocomotion() {
+}
+
+

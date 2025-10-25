@@ -1,0 +1,6 @@
+#include "AttackFilterConditional_IsDamageDescriptionGameplayTag.h"
+
+UAttackFilterConditional_IsDamageDescriptionGameplayTag::UAttackFilterConditional_IsDamageDescriptionGameplayTag() {
+}
+
+

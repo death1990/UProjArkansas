@@ -1,0 +1,6 @@
+#include "EQSContext_Companion_PlayerCombatProxyRightDirection.h"
+
+UEQSContext_Companion_PlayerCombatProxyRightDirection::UEQSContext_Companion_PlayerCombatProxyRightDirection() {
+}
+
+

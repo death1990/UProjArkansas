@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 5,
+	"VersionName": "1.00.00.0005",
+	"FriendlyName": "OEI_HoudiniUtils_V2",
+	"Description": "A plugin that contains all HDAs for the Houdini Engine V2",
+	"Category": "Other",
+	"CreatedBy": "Obsidian Entertainment",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault":  false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"TrackPatchNotes": true,
+	"Modules": [
+		{
+			"Name": "OEI_HoudiniUtils_V2",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEI Multi Skeletal Mesh",
+	"Description": "This plugin provides a skeletal mesh component that supports animating and rendering multiple skeletal meshes at once without needing many skeletal meshes.",
+	"Category": "Obsidian",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIMultiSkeletalMesh",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

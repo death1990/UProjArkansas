@@ -1,0 +1,710 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{712B673E-4DF2-5FF2-6216-73B007077982}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Arkansas",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"RenderCore",
+				"RHI",
+				"CoreUObject",
+				"AIModule",
+				"UMG",
+				"LevelSequence",
+				"Niagara",
+				"TemplateSequence",
+				"OEIText",
+				"OEIScripting",
+				"OEISettings",
+				"OEIGlobalVariables",
+				"OEICinematics",
+				"OEITickManager",
+				"OEISplineEmitter",
+				"OEIMusic"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EditorTests",
+			"Enabled": true
+		},
+		{
+			"Name": "GearVR",
+			"Enabled": false
+		},
+		{
+			"Name": "OculusInput",
+			"Enabled": false
+		},
+		{
+			"Name": "OculusLibrary",
+			"Enabled": false
+		},
+		{
+			"Name": "OculusRift",
+			"Enabled": false
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		},
+		{
+			"Name": "MORT",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/f6a838d3c72b4d28b5635da50d3335e5"
+		},
+		{
+			"Name": "MobilePatchingUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "LocationServicesBPLibrary",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "IOSDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "LinuxDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "ArchVisCharacter",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "AvfMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "HTML5Networking",
+			"Enabled": false
+		},
+		{
+			"Name": "MobileLauncherProfileWizard",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "AppleMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemIOS",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemGooglePlay",
+			"Enabled": false
+		},
+		{
+			"Name": "KDevelopSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "NullSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "XCodeSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "SubversionSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "GitSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidPermission",
+			"Enabled": false
+		},
+		{
+			"Name": "AudioCapture",
+			"Enabled": false
+		},
+		{
+			"Name": "AppleARKit",
+			"Enabled": false
+		},
+		{
+			"Name": "UObjectPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "GoogleCloudMessaging",
+			"Enabled": false
+		},
+		{
+			"Name": "PhysXVehicles",
+			"Enabled": false
+		},
+		{
+			"Name": "CodeLiteSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "VisualStudioCodeSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "OculusVR",
+			"Enabled": false
+		},
+		{
+			"Name": "ImgMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "MediaCompositing",
+			"Enabled": false
+		},
+		{
+			"Name": "OEICommon",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAudio",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIWwise",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIFlowCharts",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OnlineSubsystemLive",
+			"Enabled": true,
+			"PlatformAllowList": [
+				"XboxOne"
+			],
+			"SupportedTargetPlatforms": [
+				"XboxOne"
+			]
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": true
+		},
+		{
+			"Name": "BlueprintMaterialTextureNodes",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIDevelopment",
+			"Enabled": false
+		},
+		{
+			"Name": "MagicLeapEmulator",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "MagicLeapMedia",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "MagicLeap",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "OEIDataBrowser",
+			"Enabled": false
+		},
+		{
+			"Name": "Paper2D",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIAimAssist",
+			"Enabled": true
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "SequencerScripting",
+			"Enabled": true
+		},
+		{
+			"Name": "OEICinematics",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIPrefabricator",
+			"Enabled": true
+		},
+		{
+			"Name": "OEITileStamp",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "HoudiniNiagara",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/79d2dd58387c4696a0f3458275f739d6"
+		},
+		{
+			"Name": "OEIDerivedDataCache",
+			"Enabled": false
+		},
+		{
+			"Name": "AudioSynesthesia",
+			"Enabled": true
+		},
+		{
+			"Name": "OEITickManager",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAnimation",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIMultiSkeletalMesh",
+			"Enabled": true
+		},
+		{
+			"Name": "OEICharacterCustomization",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAnimProxy",
+			"Enabled": true
+		},
+		{
+			"Name": "Volumetrics",
+			"Enabled": true
+		},
+		{
+			"Name": "GameTelemetry",
+			"Enabled": false
+		},
+		{
+			"Name": "LuminPlatformFeatures",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "MLSDK",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicHairImporter",
+			"Enabled": true
+		},
+		{
+			"Name": "HairStrands",
+			"Enabled": true
+		},
+		{
+			"Name": "OEISubstance",
+			"Enabled": true
+		},
+		{
+			"Name": "OEICrowdManager",
+			"Enabled": true
+		},
+		{
+			"Name": "ControlRig",
+			"Enabled": true
+		},
+		{
+			"Name": "OEI_HoudiniUtils_V2",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIWodem",
+			"Enabled": false
+		},
+		{
+			"Name": "HoudiniEngine",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIArtUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIViewExtensions",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIJali",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIStructureBuilder",
+			"Enabled": false
+		},
+		{
+			"Name": "OEILandscapeTools",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIThemes",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIRest",
+			"Enabled": false
+		},
+		{
+			"Name": "OEISecureStorage",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIJira",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIJiraView",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIWeatherSystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIAutomation",
+			"Enabled": true
+		},
+		{
+			"Name": "FullBodyIK",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineManager",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIRemoteLog",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIOnlineSubsystemUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "BinkMedia",
+			"Enabled": true
+		},
+		{
+			"Name": "WebMMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "WindowsMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "WmfMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIPhotoMode",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIStringDatabase",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIPropPlacement",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIVFX",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true
+		},
+		{
+			"Name": "StaticMeshEditorModeling",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIBinkTrack",
+			"Enabled": true
+		},
+		{
+			"Name": "MovieRenderPipeline",
+			"Enabled": true
+		},
+		{
+			"Name": "Simplygon",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIVariants",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIWorldScriptActor",
+			"Enabled": true
+		},
+		{
+			"Name": "TFlow",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/3b5dd569bbf24f019e1451a1b2d75d19"
+		},
+		{
+			"Name": "GeometryScripting",
+			"Enabled": true
+		},
+		{
+			"Name": "Water",
+			"Enabled": true
+		},
+		{
+			"Name": "WaterExtras",
+			"Enabled": true
+		},
+		{
+			"Name": "ProjectAcoustics",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android",
+				"XboxOneGDK",
+				"XSX",
+				"WinGDK",
+				"PS4",
+				"PS5"
+			]
+		},
+		{
+			"Name": "ImpostorBaker",
+			"Enabled": true
+		},
+		{
+			"Name": "SpeedTreeImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "OEISettings",
+			"Enabled": true
+		},
+		{
+			"Name": "VisualStudioTools",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/362651520df94e4fa65492dbcba44ae2",
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "ActorPalette",
+			"Enabled": true
+		},
+		{
+			"Name": "PCG",
+			"Enabled": true
+		},
+		{
+			"Name": "PCGExternalDataInterop",
+			"Enabled": true
+		},
+		{
+			"Name": "PCGGeometryScriptInterop",
+			"Enabled": true
+		},
+		{
+			"Name": "TemplateSequence",
+			"Enabled": true
+		},
+		{
+			"Name": "SIE_MFSR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"PS5"
+			]
+		},
+		{
+			"Name": "StreamlineCore",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "NIS",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "StreamlineDLSSG",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "DLSS",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "StreamlineReflex",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "StreamlineDeepDVC",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "Streamline",
+			"Enabled": false,
+			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "OnlineSubsystemGDK",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK",
+				"XB1",
+				"XSX"
+			]
+		},
+		{
+			"Name": "XeSS",
+			"Enabled": false
+		},
+		{
+			"Name": "OEIPlatformService",
+			"Enabled": true
+		},
+		{
+			"Name": "MSGamingRuntime",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "XboxCommonGDKMoviePlayer",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"XB1",
+				"XSX"
+			]
+		},
+		{
+			"Name": "Gauntlet",
+			"Enabled": true
+		},
+		{
+			"Name": "FSR4",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK"
+			]
+		},
+		{
+			"Name": "OEIGamingDevice",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"WinGDK",
+				"XSX",
+				"WinGDK",
+				"PS5"
+			]
+		}
+	],
+	"TargetPlatforms": [
+		"WinGDK",
+		"Windows",
+		"XSX",
+		"PS5",
+		"GDK"
+	]
+}

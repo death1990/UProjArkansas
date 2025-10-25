@@ -1,0 +1,25 @@
+{
+	"FileVersion": 1,
+	"Version": 1,
+	"VersionName": "1.00.00.0000",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEI Secure Storage",
+	"Description": "Obsidian API for interacting with the Credential Manager",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEISecureStorage",
+			"Type": "DeveloperTool",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}

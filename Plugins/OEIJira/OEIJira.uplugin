@@ -1,0 +1,35 @@
+{
+	"FileVersion": 1,
+	"Version": 7,
+	"VersionName": "1.00.00.0008",
+	"TrackPatchNotes": true,
+	"FriendlyName": "OEIJira",
+	"Description": "API for interacting with Jira",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"CanContainContent": true,
+	"EnabledByDefault": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIJira",
+			"Type": "DeveloperTool",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEIRest",
+			"Enabled": true
+		},
+		{
+			"Name": "OEISecureStorage",
+			"Enabled": true
+		}
+	]
+}

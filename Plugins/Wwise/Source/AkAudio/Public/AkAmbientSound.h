@@ -1,0 +1,43 @@
+#pragma once
+#include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
+#include "AkAmbientSound.generated.h"
+
+class UAkAudioEvent;
+class UAkComponent;
+
+UCLASS(Blueprintable)
+class AKAUDIO_API AAkAmbientSound : public AActor {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UAkAudioEvent* AkAudioEvent;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UAkComponent* AkComponent;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
+    bool StopWhenOwnerIsDestroyed;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
+    bool AutoPost;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
+    bool bDistanceCull;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
+    float CullRadius;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
+    float CullDebounce;
+    
+    AAkAmbientSound(const FObjectInitializer& ObjectInitializer);
+
+    UFUNCTION(BlueprintCallable, BlueprintCosmetic)
+    void StopAmbientSound();
+    
+    UFUNCTION(BlueprintCallable, BlueprintCosmetic)
+    void StartAmbientSound();
+    
+};
+

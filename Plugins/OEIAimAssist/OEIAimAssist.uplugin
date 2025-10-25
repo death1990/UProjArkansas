@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "OEI Aim Assist",
+	"Description": "This plugin provides a basic extendable AimAssist CameraModifiers.",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc.",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "https://confluence.obsidian.net/x/kaCoBw",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEIAimAssist",
+			"Type": "Runtime",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
+}
