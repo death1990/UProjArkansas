@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=GuidIntPair -FallbackName=GuidIntPair
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableConditional -FallbackName=GlobalVariableConditional
+#include <GuidIntPair.h>
+#include <GlobalVariableConditional.h>
 #include "ObjectiveNode.h"
 #include "GenericObjectiveNode.generated.h"
 

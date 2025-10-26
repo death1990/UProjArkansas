@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=OEIDataAssetInterface -FallbackName=OEIDataAssetInterface
+#include "OEIDataAssetInterface.h"
+
 #include "ChatterBundle.h"
 #include "ChatterAsset.generated.h"
 

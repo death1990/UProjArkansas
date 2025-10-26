@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EOEIGender -FallbackName=EOEIGender
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=ConditionalLocString -FallbackName=ConditionalLocString
+#include <EOEIGender.h>
+#include <ConditionalLocString.h>
 #include "SpeakerBundle.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=UserWidget -FallbackName=UserWidget
+#include <LocString.h>
+#include "Blueprint/UserWidget.h"
 #include "EPhotoModeSetting.h"
 #include "EPhotoSettingsGroup.h"
 #include "PhotoModeSettingsGroupBase.generated.h"

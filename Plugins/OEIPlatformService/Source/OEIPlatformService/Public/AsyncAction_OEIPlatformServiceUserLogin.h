@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CancellableAsyncAction -FallbackName=CancellableAsyncAction
+#include "Engine\CancellableAsyncAction.h"
+
 #include "EOEIPlatformServiceProvider.h"
 #include "OEIPlatformServiceOnLoginCompleteMulticastDelegate.h"
 #include "AsyncAction_OEIPlatformServiceUserLogin.generated.h"

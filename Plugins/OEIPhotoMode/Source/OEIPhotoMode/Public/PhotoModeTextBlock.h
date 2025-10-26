@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=TextBlock -FallbackName=TextBlock
+#include "Components/TextBlock.h"
+
 #include "PhotoModeTextBlock.generated.h"
 
 UCLASS(Blueprintable)

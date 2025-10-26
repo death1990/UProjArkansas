@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=CheckBox -FallbackName=CheckBox
+#include "Components/CheckBox.h"
+
 #include "PhotoModeCheckBoxBase.generated.h"
 
 UCLASS(Blueprintable)

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationNavigatorState -FallbackName=ConversationNavigatorState
+#include <ConversationNavigatorState.h>
 #include "ResolvedSpeaker.h"
 #include "StageMark.h"
 #include "OEICineConversationInstance.generated.h"

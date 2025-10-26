@@ -32,7 +32,7 @@
 	"Plugins": [
 		{
 			"Name": "EditorTests",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "GearVR",
@@ -228,7 +228,7 @@
 		},
 		{
 			"Name": "EditorScriptingUtilities",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "OEIDevelopment",
@@ -326,10 +326,6 @@
 		},
 		{
 			"Name": "OEIAnimProxy",
-			"Enabled": true
-		},
-		{
-			"Name": "Volumetrics",
 			"Enabled": true
 		},
 		{
@@ -477,11 +473,11 @@
 		},
 		{
 			"Name": "ModelingToolsEditorMode",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "StaticMeshEditorModeling",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "OEIBinkTrack",
@@ -510,14 +506,6 @@
 		},
 		{
 			"Name": "GeometryScripting",
-			"Enabled": true
-		},
-		{
-			"Name": "Water",
-			"Enabled": true
-		},
-		{
-			"Name": "WaterExtras",
 			"Enabled": true
 		},
 		{

@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
+#include <EComparisonOperator.h>
 #include "GlobalVariableReference.h"
+#include <EComparisonOperator.h>
 #include "GlobalVariableConditional.generated.h"
 
 USTRUCT(BlueprintType)

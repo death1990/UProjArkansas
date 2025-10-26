@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=GuidSet -FallbackName=GuidSet
+#include <GuidSet.h>
 #include "CheckpointBranchNode.h"
 #include "CinematicNode.h"
 #include "DialogueLink.h"

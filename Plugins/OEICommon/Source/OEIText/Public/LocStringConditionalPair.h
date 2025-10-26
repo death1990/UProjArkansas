@@ -1,8 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=Conditional -FallbackName=Conditional
 #include "LocString.h"
+#include <Conditional.h>
 #include "LocStringConditionalPair.generated.h"
+
 
 USTRUCT(BlueprintType)
 struct OEITEXT_API FLocStringConditionalPair {

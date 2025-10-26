@@ -1,5 +1,5 @@
 #include "WeatherSystem.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PostProcessComponent -FallbackName=PostProcessComponent
+#include "Components\PostProcessComponent.h"
 
 AWeatherSystem::AWeatherSystem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<UPostProcessComponent>(TEXT("WeatherSystemPostProcessComponent"));

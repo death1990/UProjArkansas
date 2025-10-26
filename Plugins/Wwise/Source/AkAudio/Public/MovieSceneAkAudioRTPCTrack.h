@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackTemplateProducer -FallbackName=MovieSceneTrackTemplateProducer
+#include "Compilation/IMovieSceneTrackTemplateProducer.h"
+
 #include "MovieSceneAkTrack.h"
 #include "MovieSceneAkAudioRTPCTrack.generated.h"
 
@@ -9,6 +10,15 @@ class UMovieSceneAkAudioRTPCTrack : public UMovieSceneAkTrack, public IMovieScen
     GENERATED_BODY()
 public:
     UMovieSceneAkAudioRTPCTrack();
+
+    // --- Required Overrides ---
+    virtual const TArray<UMovieSceneSection*>& GetAllSections() const override;
+    virtual void RemoveAllAnimationData() override;
+    virtual bool HasSection(const UMovieSceneSection& Section) const override;
+    virtual void RemoveSection(UMovieSceneSection& Section) override;
+    virtual bool IsEmpty() const override;
+
+    virtual FMovieSceneEvalTemplatePtr CreateTemplateForSection(const UMovieSceneSection& InSection) const override;
 
 
     // Fix for true pure virtual functions not being implemented

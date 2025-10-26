@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ScriptCall -FallbackName=ScriptCall
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=TimelineScriptCall -FallbackName=TimelineScriptCall
+#include <ScriptCall.h>
+#include <TimelineScriptCall.h>
+
+
 #include "EFlowChartNodeType.h"
 #include "FlowChartNode.generated.h"
 

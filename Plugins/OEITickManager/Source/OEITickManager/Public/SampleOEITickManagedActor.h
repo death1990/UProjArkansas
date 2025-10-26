@@ -1,6 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TextRenderActor -FallbackName=TextRenderActor
+#include "Components/TextRenderComponent.h"
+#include "Engine\TextRenderActor.h"
+
+
 #include "SampleOEITickManagedActor.generated.h"
 
 UCLASS(Blueprintable)

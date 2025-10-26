@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatInterval -FallbackName=FloatInterval
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=EMovieSceneBuiltInEasing -FallbackName=EMovieSceneBuiltInEasing
+#include <Generators/MovieSceneEasingCurves.h>
 #include "OEIWeightedGestureCollection.h"
 #include "OEIGestureTrackActorGenerationSettings.generated.h"
 

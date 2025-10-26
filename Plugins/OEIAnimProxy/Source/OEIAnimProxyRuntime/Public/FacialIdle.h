@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimationRuntime -ObjectName=RandomDataListEntry -FallbackName=RandomDataListEntry
+#include "RandomDataListEntry.h"
 #include "FacialIdle.generated.h"
 
 class UAnimSequence;

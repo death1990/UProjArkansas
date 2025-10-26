@@ -1,6 +1,8 @@
 #include "PhotoPawn.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CinematicCamera -ObjectName=CineCameraComponent -FallbackName=CineCameraComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SpringArmComponent -FallbackName=SpringArmComponent
+#include "CineCameraComponent.h"
+
+#include "GameFramework/SpringArmComponent.h"
 
 APhotoPawn::APhotoPawn(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));

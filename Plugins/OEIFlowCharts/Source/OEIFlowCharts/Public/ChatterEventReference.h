@@ -15,3 +15,7 @@ public:
     FChatterEventReference();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FChatterEventReference& Mod)
+{
+    return ::GetTypeHash(Mod.StaticStruct);
+}

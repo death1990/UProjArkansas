@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=OEIDataAssetInterface -FallbackName=OEIDataAssetInterface
+#include "OEIDataAssetInterface.h"
 #include "SpeakerAsset.generated.h"
 
 class UChatterAsset;

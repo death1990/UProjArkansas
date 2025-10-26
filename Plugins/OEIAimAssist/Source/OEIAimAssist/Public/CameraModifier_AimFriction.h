@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraModifier -FallbackName=CameraModifier
+#include "Camera\CameraModifier.h"
 #include "AimFrictionConfig.h"
 #include "CameraModifier_AimFriction.generated.h"
 

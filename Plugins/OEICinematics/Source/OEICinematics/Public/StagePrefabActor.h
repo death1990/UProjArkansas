@@ -14,7 +14,7 @@ class UPostProcessComponent;
 class USphereComponent;
 
 UCLASS(Blueprintable)
-class OEICINEMATICS_API AStagePrefabActor : public APrefabActor {
+class OEICINEMATICS_API AStagePrefabActor : public AActor /*APrefabActor*/ {
     GENERATED_BODY()
 public:
 protected:

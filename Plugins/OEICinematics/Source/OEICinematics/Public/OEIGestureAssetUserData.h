@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AssetUserData -FallbackName=AssetUserData
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimAppearanceCompatibility -FallbackName=AnimAppearanceCompatibility
+#include <AnimAppearanceCompatibility.h>
 #include "OEIGestureAssetUserData.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)

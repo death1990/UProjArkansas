@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=UserWidget -FallbackName=UserWidget
+#include "Blueprint/UserWidget.h"
 #include "EPhotoModeSetting.h"
 #include "PhotoModeSettingsInterface.h"
 #include "PhotoModeSettingsBase.generated.h"

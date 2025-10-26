@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ConditionalLibrary -FallbackName=ConditionalLibrary
+#include "ConditionalLibrary.h"
 #include "QuestConditionals.generated.h"
 
 UCLASS(Blueprintable)

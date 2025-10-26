@@ -4,7 +4,7 @@
 #include "StagePrefabAsset.generated.h"
 
 UCLASS(Blueprintable)
-class OEICINEMATICS_API UStagePrefabAsset : public UPrefabricatorAsset {
+class OEICINEMATICS_API UStagePrefabAsset : public UObject /*UPrefabricatorAsset*/ {
     GENERATED_BODY()
 public:
     UStagePrefabAsset();

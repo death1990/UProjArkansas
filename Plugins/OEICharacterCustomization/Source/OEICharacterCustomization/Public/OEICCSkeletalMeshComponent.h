@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIMultiSkeletalMesh -ObjectName=OEIMultiSkeletalMeshComponent -FallbackName=OEIMultiSkeletalMeshComponent
+#include "OEIMultiSkeletalMeshComponent.h"
+
 #include "OEICCSkeletalMeshComponent.generated.h"
 
 class UBoneModifications;

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackImplementation -FallbackName=MovieSceneTrackImplementation
+#include "Evaluation\MovieSceneTrackImplementation.h"
+
 #include "OEICineShotTrackImplementation.generated.h"
 
 USTRUCT(BlueprintType)

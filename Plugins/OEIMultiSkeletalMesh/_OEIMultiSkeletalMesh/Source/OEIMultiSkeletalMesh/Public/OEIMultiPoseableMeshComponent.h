@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseableMeshComponent -FallbackName=PoseableMeshComponent
+#include "Components/PoseableMeshComponent.h"
+
 #include "GTChildMeshData.h"
+
 #include "MultiMeshChildVisitorDelegate.h"
 #include "OEIMultiMeshInterface.h"
 #include "OEIMultiPoseableMeshComponent.generated.h"

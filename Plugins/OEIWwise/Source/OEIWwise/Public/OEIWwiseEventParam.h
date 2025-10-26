@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkExternalSourceInfo -FallbackName=AkExternalSourceInfo
+#include <AkExternalSourceInfo.h>
 #include "OEIWwiseEventParam.generated.h"
 
 class UAkAudioEvent;

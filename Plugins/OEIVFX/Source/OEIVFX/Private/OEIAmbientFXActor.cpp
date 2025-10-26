@@ -1,5 +1,5 @@
 #include "OEIAmbientFXActor.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
+#include "Components/BoxComponent.h"
 #include "OEIAmbientSoundComponent_Wwise.h"
 #include "OEIInstancedNiagaraComponent.h"
 

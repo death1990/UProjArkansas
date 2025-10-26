@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=BinkMediaPlayer -ObjectName=EBinkMediaPlayerBinkDrawStyle -FallbackName=EBinkMediaPlayerBinkDrawStyle
+#include <BinkMediaPlayer.h>
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FilePath -FallbackName=FilePath
 #include "OEIBinkTrackSectionParams.generated.h"
 

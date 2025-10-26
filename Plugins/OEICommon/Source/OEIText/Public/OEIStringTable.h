@@ -3,6 +3,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=IDSet -FallbackName=IDSet
 #include "OEIStringEntry.h"
 #include "OEITooltipDataArray.h"
+#include <IDSet.h>
 #include "OEIStringTable.generated.h"
 
 USTRUCT(BlueprintType)

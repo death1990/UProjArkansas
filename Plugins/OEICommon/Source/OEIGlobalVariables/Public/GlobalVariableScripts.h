@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ScriptLibrary -FallbackName=ScriptLibrary
+#include "ScriptLibrary.h"
 #include "GlobalVariableScripts.generated.h"
 
 UCLASS(Blueprintable)

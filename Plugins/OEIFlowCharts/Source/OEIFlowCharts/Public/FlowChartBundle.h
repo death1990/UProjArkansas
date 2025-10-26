@@ -1,9 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=Conditional -FallbackName=Conditional
+#include <Conditional.h>
 #include "BankNode.h"
 #include "FlowChartBundle.generated.h"
+
 
 class UObject;
 

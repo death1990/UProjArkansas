@@ -1,5 +1,6 @@
 #include "OEICrowdSettings.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Arkansas -ObjectName=OwCrowdManager -FallbackName=OwCrowdManager
+#include "OwCrowdManager.h"
 
 UOEICrowdSettings::UOEICrowdSettings() {
     this->MaxStationaryCharacters = 50;

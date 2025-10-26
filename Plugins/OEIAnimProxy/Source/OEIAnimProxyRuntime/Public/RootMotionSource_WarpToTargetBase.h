@@ -3,6 +3,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RootMotionSource -FallbackName=RootMotionSource
 #include "SyncPoint.h"
+#include "GameFramework/RootMotionSource.h"
 #include "RootMotionSource_WarpToTargetBase.generated.h"
 
 USTRUCT(BlueprintType)

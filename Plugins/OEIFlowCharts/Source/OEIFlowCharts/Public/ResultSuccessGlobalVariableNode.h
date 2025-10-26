@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableConditional -FallbackName=GlobalVariableConditional
+#include <GlobalVariableConditional.h>
 #include "ResultSuccessNode.h"
 #include "ResultSuccessGlobalVariableNode.generated.h"
 
