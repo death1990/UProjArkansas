@@ -2,9 +2,26 @@ using UnrealBuildTool;
 
 public class Arkansas : ModuleRules {
     public Arkansas(ReadOnlyTargetRules Target) : base(Target) {
-        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        // Optimization: Use shared PCH for faster compilation
+        PCHUsage = PCHUsageMode.UseSharedPCHs;
         bLegacyPublicIncludePaths = false;
         ShadowVariableWarningLevel = WarningLevel.Warning;
+        
+        // Performance optimizations
+        bUseUnity = true;
+        MinFilesUsingPrecompiledHeaderOverride = 1;
+        bFasterWithoutUnity = false;
+        
+        // Enable optimizations for shipping builds
+        if (Target.Configuration == UnrealTargetConfiguration.Shipping)
+        {
+            bUseAVX = true;
+            OptimizeCode = CodeOptimization.Speed;
+        }
+        
+        // Reduce compile times
+        bUsePrecompiled = true;
+        bPrecompile = true;
         
         PublicDependencyModuleNames.AddRange(new string[] {
             "AIModule",
@@ -58,14 +75,34 @@ public class Arkansas : ModuleRules {
             "Launch",
         });
 
-        /*PrivateDependencyModuleNames.AddRange(new string[] {
+        // Enable private dependencies for better performance
+        PrivateDependencyModuleNames.AddRange(new string[] {
             "Chaos",
-            "GeometryProcessing",
+            "GeometryProcessing", 
             "GeometryAlgorithms",
             "DynamicMesh",
             "RHI",
             "RenderCore",
-        });*/
+            "ApplicationCore",
+            "Json",
+            "HTTP",
+        });
+        
+        // Platform-specific optimizations
+        if (Target.Platform == UnrealTargetPlatform.Win64)
+        {
+            PublicDefinitions.Add("PLATFORM_WINDOWS=1");
+            bEnableExceptions = false; // Disable exceptions for performance
+        }
+        
+        // Optimize include paths
+        PublicIncludePaths.AddRange(new string[] {
+            "Arkansas/Public"
+        });
+        
+        PrivateIncludePaths.AddRange(new string[] {
+            "Arkansas/Private"
+        });
 
     }
 }

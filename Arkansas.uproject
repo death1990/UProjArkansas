@@ -1,8 +1,13 @@
 {
 	"FileVersion": 3,
 	"EngineAssociation": "{712B673E-4DF2-5FF2-6216-73B007077982}",
-	"Category": "",
-	"Description": "",
+	"Category": "Games",
+	"Description": "The Outer Worlds 2 Modding Framework - Optimized for Unreal Engine 5.4.4-TOW2",
+	"EpicSampleNameHash": "0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsTestProject": false,
+	"DisableEnginePluginsByDefault": false,
 	"Modules": [
 		{
 			"Name": "Arkansas",
