@@ -1,124 +1,42 @@
 # Arkansas Project - Copilot Instructions
 
-## Project Overview
-This is a modding framework for **The Outer Worlds 2** created from UE4SS dumps. It provides C++ class foundations that blueprint modders can inherit from to create mods using native game classes.
+## Mission-critical context
+- Always target the custom **UE 5.4.4-TOW2** build from `nathtest/UnrealEngine@5.4.4-TOW2`; the `.uproject` is bound to GUID `{712B673E-4DF2-5FF2-6216-73B007077982}` and will not open in stock UE.
+- This repository is the C++ API layer dumped via UE4SS so blueprint modders can subclass native TOW2 types; real game assets are absent and must be recreated via FModel dummies.
+- `Source/Arkansas/Public` exposes ~2000 headers that mirror in-game classes (Indiana*, StatusEffect, Rpg*); Blueprint code inherits from these rather than duplicating gameplay.
+- Everything assumes Windows + Visual Studio 2022; other host setups are untested and the automation scripts call `devenv` directly.
 
-## Critical Architecture Knowledge
+## Source layout & APIs
+- `Source/Arkansas` is the primary game module; sibling modules (`Source/GameTelemetry`, `Source/OEISplineEmitter`, `Source/OEIVoiceOver`) host supporting systems referenced by the main Build.cs.
+- `Plugins/OEI*` contains 30+ Obsidian plugins; pay attention to PreDefault loaders like `OEICommon`, `OEITickManager`, `OEIWwise`, `OEIFlowCharts`, `OEIWorldScriptActor`—breaking their load order causes editor startup failures.
+- `Config/DefaultPlugins.ini` pre-enables the OEI stack along with ZoneGraph profiles; update it instead of toggling plugins inside the editor so the custom engine stays deterministic.
+- `Content/Blueprints/AI` and `Content/Blueprints/Player` store sample behavior trees, AI controllers, and player blueprints that demonstrate how designers extend the dumped classes.
+- Wwise/AkAudio integration is wired through `OEIWwise` plus stock `AkAudio`; audio-related changes typically also touch `Config/DefaultEngine.ini` and `Windows/WindowsEngine.ini`.
 
-### Custom Unreal Engine
-- **Requires UE 5.4.4-TOW2**: Must build the modified engine from `https://github.com/nathtest/UnrealEngine/tree/5.4.4-TOW2`
-- **Not standard UE**: Standard UE 5.4.4 will NOT work - uses Obsidian's custom modifications
-- **Setup**: Right-click `Arkansas.uproject` → "Generate Visual Studio project files" → Compile in VS → Open editor
+## Engine + build workflow
+- Build the modified engine once, then point `%USERPROFILE%\Documents\UnrealEngine\5.4.4-TOW2` to it so `Build_Optimized.bat` can find `UnrealBuildTool.exe` and regenerate project files with `-2022` flags.
+- Typical loop: run `Build_Optimized.bat`, which validates Visual Studio, regenerates solution files, and builds both `Development Editor` and `Development` targets before you launch `Arkansas.uproject`.
+- `Arkansas.Build.cs` is tuned for fast iteration (Unity builds, shared PCHs, `bUsePrecompiled/bPrecompile`, AVX in Shipping); keep new dependencies minimal and prefer PublicIncludePaths already declared.
+- Target files (`Arkansas.Target.cs`, `ArkansasEditor.Target.cs`) enforce BuildSettings V5, IncludeOrder 5.4, FastPDB, incremental linking, and hot reload; mirror those flags if you create new targets.
+- Custom engine config lives under `Config/Windows/*.ini` and `Config/DefaultEngine.ini`—they set DX12, RHI threading, memory budgets, and plugin metadata; preserve these when adding new settings.
 
-### OEI Plugin Ecosystem
-The project revolves around **30+ custom Obsidian Entertainment plugins** in `/Plugins/OEI*`:
-- **OEICommon**: Core tech foundation - loaded PreDefault phase
-- **OEIFlowCharts**: Dialog/conversation system  
-- **OEIWwise**: Audio integration with Wwise middleware
-- **OEITickManager**: Custom tick management system
-- **OEICinematics**: Cutscene and camera systems
-- **OEIWorldScriptActor**: Level scripting framework
+## Gameplay systems to know
+- **Characters**: `IndianaCharacter` and `IndianaAICharacter` are the base hero/NPC types; companions, positioning, commands, and behavior trees extend from here.
+- **Status & stats**: `StatusEffect`, `RpgStat`, and `RpgStatComponent` drive buffs, debuffs, and attribute progressions across combat and dialog checks.
+- **Conversation**: `OEIFlowCharts` manages branching dialog graphs; nodes reference faction reputation and quest globals supplied by `OEIGlobalVariables` and `OEIScripting`.
+- **Inventory & gear**: `ItemDefinition` variants plus customization modules (`OEICharacterCustomization`, `OEIMultiSkeletalMesh`) define equipment data and visual swaps.
+- **Combat**: Systems assume Tactical Time Dilation, aim assist (`OEIAimAssist`), Wwise-driven audio cues, and Tick orchestration via `OEITickManager`.
 
-### Module Dependencies
-Main module (`Source/Arkansas/Arkansas.Build.cs`) depends on:
-```cpp
-"OEIAimAssist", "OEIAnimationRuntime", "OEICharacterCustomization", 
-"OEICinematics", "OEICommon", "OEIFlowCharts", "OEIGlobalVariables",
-"OEIScripting", "OEISettings", "OEIText", "OEITickManager"
-```
+## Modding & asset workflow
+- Use FModel to extract/create placeholder assets, then author Blueprints that inherit from the exported C++ types; never edit dumped engine classes directly.
+- Blueprint authors follow event-driven patterns (see `Source/Arkansas/Public/ArkansasPerformanceUtils.h`): favor dispatchers, timers, and cached component refs instead of heavy Tick usage.
+- Packaging a playable mod still requires KZekai’s **Simple Mod Loader**—this project just builds the class library you inherit from before cooking content.
+- Missing in-game data (strings, audio banks, prefabs) must be stubbed or referenced through the OEI plugins; check `Plugins/OEIStringDatabase`, `OEIWwise`, and `OEIPrefabricator` before adding new subsystems.
+- Keep blueprint folders mirroring the existing convention (`Content/Blueprints/AI`, `Player`, `UI`) so designers can swap in their assets without editor path churn.
 
-## Development Patterns
-
-### Character System Architecture
-- **IndianaCharacter**: Base character class (TOW2's codename was "Indiana")
-- **IndianaAICharacter**: AI-controlled NPCs with behavior trees
-- **Companion System**: Complex companion AI with commands, positioning, combat abilities
-- **Status Effects**: Extensive modular status effect system via `StatusEffect` base class
-
-### Key Gameplay Systems
-- **RPG Stats**: `RpgStat`, `RpgStatComponent` - attribute/skill system
-- **Reputation/Faction**: Complex faction relationship system
-- **Conversation System**: Node-based dialog via OEIFlowCharts
-- **Inventory**: Modular item system with `ItemDefinition` variants
-- **Combat**: Melee/ranged with tactical time dilation (TTD)
-
-### Asset Organization Conventions
-```
-Content/Blueprints/
-├── AI/           # Behavior trees, AI controllers  
-├── Player/       # Player-specific blueprints
-Content/UI/       # User interface blueprints
-Plugins/          # All custom OEI functionality
-Source/Arkansas/  # Core game module
-├── Public/       # ~2000+ header files (extensive API)
-├── Private/      # Implementation files
-```
-
-## Critical Workflows
-
-### Building & Testing
-```bash
-# Generate project files (Windows)
-# Right-click Arkansas.uproject → "Generate Visual Studio project files"
-
-# Build in Visual Studio
-# Open Arkansas.sln → Build Solution (Development Editor config)
-
-# Launch editor
-# Double-click Arkansas.uproject (after building)
-```
-
-### Mod Development Pattern
-1. **Use FModel** to create asset dummies for existing game content
-2. **Inherit from Arkansas C++ classes** in Blueprint
-3. **Override virtual functions** in Blueprint implementation  
-4. **Use Simple Mod Loader** (by KZekai) for mod deployment
-
-### Engine Configuration
-- **Custom Engine Association**: `{712B673E-4DF2-5FF2-6216-73B007077982}` in `.uproject`
-- **Critical Settings**: 30+ OEI plugins enabled, many standard UE plugins disabled
-- **Audio**: Wwise integration required (not standard UE audio)
-
-## Important Constraints
-
-### Compatibility Requirements  
-- **Must use custom UE 5.4.4-TOW2 build** - standard UE will fail
-- **Blueprint-focused**: This provides C++ foundation, actual mods are Blueprint-based
-- **Asset Dependencies**: Game assets not included - use FModel to extract needed references
-- **Mod Loader**: Requires external mod loader for game integration
-
-### File System Patterns
-- **Headers in Public/**: ~2000 game class definitions expose full TOW2 API
-- **OEI Namespace**: All custom systems prefixed with `OEI`  
-- **Indiana Prefix**: Core gameplay classes use "Indiana" prefix (internal codename)
-- **Config Extensive**: Complex engine configuration in `/Config` for TOW2 compatibility
-
-## Performance Optimizations Applied
-
-### Build System Enhancements
-- **Unity Build**: Enabled for 30-50% faster compilation
-- **Shared PCHs**: Reduced memory usage during builds
-- **Platform Optimizations**: Windows-specific compiler settings
-- **Hot Reload**: Enhanced editor iteration speed
-
-### Runtime Optimizations  
-- **Texture Streaming**: Optimized VRAM usage (3GB pool)
-- **Animation System**: Parallel processing enabled
-- **Memory Management**: Tuned GC thresholds
-- **Audio Integration**: Wwise-optimized channel management
-
-### Tools and Automation
-- **Build_Optimized.bat**: Automated optimized build script  
-- **ArkansasPerformanceUtils.h**: Performance guidelines and console commands
-- **PERFORMANCE_OPTIMIZATIONS.md**: Comprehensive optimization documentation
-
-### Key Performance Commands
-```cpp
-// Runtime console commands for performance tuning:
-r.SetRes 1920x1080          // Optimal resolution
-r.Streaming.PoolSize 3000   // Texture streaming optimization  
-a.ParallelAnimUpdate 1      // Parallel animation processing
-gc.MaxObjectsNotConsideredByGC 1  // GC optimization
-```
-
-When working with this project, prioritize understanding the OEI plugin dependencies and the fact that this is a **modding foundation**, not a standalone game. All development should consider Blueprint inheritance patterns, the external mod loading pipeline, and the extensive performance optimizations that have been applied for optimal Unreal Engine workflow.
+## Performance & debugging
+- `PERFORMANCE_OPTIMIZATIONS.md` explains every build/editor/runtime tweak already applied—consult it before changing compiler flags or GC/threading settings.
+- `ArkansasPerformanceUtils.h` doubles as an in-source playbook with macro helpers (`ARKANSAS_PROFILE_SCOPE`) and runtime console commands (`r.Streaming.PoolSize 3000`, `a.ParallelAnimUpdate 1`, `gc.MaxObjectsNotConsideredByGC 1`).
+- Build automation expects Visual Studio `devenv` builds; if you switch to `MSBuild` or `UBT` CLI, mirror the configurations produced by `Build_Optimized.bat` to avoid mismatched PDBs.
+- Runtime tuning leans on DX12 + RHI threading (`r.RHIThread=1`, `au.MaxChannels=32`, etc.) set in `Config/DefaultEngine.ini` and `Windows/WindowsEngine.ini`; keep those aligned with the custom engine.
+- When adding new OEI modules, update `Arkansas.Build.cs` dependencies and `Config/DefaultPlugins.ini` together so PreDefault-loading modules remain stable.
